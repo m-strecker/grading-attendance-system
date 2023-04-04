@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Grading and Attendance System</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+    
+      <style>
+              #jumbo{
+              width: 100%;
+              height: 175px;
+              background-image: url("background.png");
+              }
+
+              li:hover{
+                background-color: lightgrey;
+              }
+
+              .container1{
+                display: grid;
+                grid-template-columns: auto auto auto auto auto;
+              }
+              .item{
+                background-color: lightskyblue;
+                border: 2px solid darkblue;
+                text-align: center;
+                font-size: 16pt;
+                padding: 10px;
+              }
+              .itemS{
+                background-color: white;
+                border: 2px solid darkblue;
+                text-align: center;
+                font-size: 14pt;
+                padding: 10px;
+              }
+              .flex-container1{
+                display: flex;
+                flex-wrap: wrap;
+              }
+              .flex-container1 > div {
+                background-color: lightpink;
+                font-size: 12pt;
+                text-align: center;
+                padding: 10px;
+                border: 0.5px solid darkblue;
+              }
+              #footer{
+                font-size: 10pt;
+                font-style: italic;
+              }
+              .page-footer{
+                background-color: lightyellow;
+              }
+              em{
+                color: darkblue;
+              }
+      </style>
+    </head>
+    <body>
+      <!-- Jumbotron-->
+      <div class="jumbotron text-center" style="margin-bottom:0" id="jumbo"></div> 
+
+      <!-- Navigation Bar-->     
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">Ontario Tech University</a>
+          </div>
+          <ul class="nav navbar-nav" id="list1">
+            <li><a href="#">Attendance</a></li>
+            <li><a href="#">Grade</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <!--Grid Layout-->
+      <div class="container1">
+        
+        <div class="item">Student Name</div>
+        <div class="item">Student ID</div>
+        <div class="item">Student Year</div>
+        <div class="item">Student GPA</div>
+        <div class="item">Student Grade</div>
+        
+       <!--Student Data--> 
+        <div class="itemS">Student 1</div>
+        <div class="itemS">9870004</div>
+        <div class="itemS">2023</div>
+        <div class="itemS">95</div>
+        <div class="itemS">A</div>
+
+        <div class="itemS">Student 2</div>
+        <div class="itemS">9870003</div>
+        <div class="itemS">2022</div>
+        <div class="itemS">88</div>
+        <div class="itemS">A</div>
+
+        <div class="itemS">Student 3</div>
+        <div class="itemS">9870001</div>
+        <div class="itemS">2020</div>
+        <div class="itemS">80</div>
+        <div class="itemS">B</div>
+
+        <div class="itemS">Student 4</div>
+        <div class="itemS">9870002</div>
+        <div class="itemS">2021</div>
+        <div class="itemS">75</div>
+        <div class="itemS">B</div>
+
+        <br>
+
+
+      </div>
+
+      <!--FlexBox Layout-->
+
+      <div class="flex-container1">
+        <div>Student ID: <b>9870004</b> <br>Attendance Record: <em>Attended</em></div>
+        <div>Student ID: <b>9870003</b> <br>Attendance Record: <em>Absent</em></div>
+        <div>Student ID: <b>9870001</b> <br>Attendance Record: <em>Attended</em></div>
+        <div>Student ID: <b>9870002</b> <br>Attendance Record: <em>Attended</em></div>
+      </div>
+      <br><br>
+      <!-- Footer -->
+      <footer class="page-footer">
+
+      <!-- Copyright -->
+      <div class="footer-copyright text-center">© 2023 Copyright: <em>DesignServices.com</em></div>
+      <!-- Copyright -->
+
+      </footer>
+      <!-- Footer -->
+
+
+    </body>
+</html>
